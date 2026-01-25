@@ -11,14 +11,19 @@ backup = on
 
 ## Main Code
 
-Here's our main file:
+Here's our main file - first the includes:
 
 ```c main.c
 #include <stdio.h>
+#include "main.h"
+```
 
+Now the main function (continues into main.c):
+
+```c
 int main(void)
 {
-    printf("Hello from ryft!\n");
+    greet();
     return 0;
 }
 ```
@@ -34,14 +39,14 @@ void greet(void);
 #endif
 ```
 
-## Continuation Block
+## Back to Implementation
 
-This block has no filename, should append to previous target:
+Now we implement greet() - note we explicitly say main.c:
 
-```c
+```c main.c
 void greet(void)
 {
-    printf("Greetings!\n");
+    printf("Hello from ryft!\n");
 }
 ```
 
@@ -56,14 +61,5 @@ int this_is_just_for_display(void)
     return 42;
 }
 ````
-
-## Plain Block
-
-A block with no language specified:
-
-```
-just some plain text
-config_option = value
-```
 
 End of test document.
