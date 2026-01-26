@@ -1,0 +1,13 @@
+# Ryft - Ripping Your Fenced Text 
+# Base config file
+
+version="0.1.0"
+
+backup=on
+backup_limit=10
+backup_timestamp=on
+verbose=on
+summary=on
+strict_mode=off 
+
+
